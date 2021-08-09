@@ -17,7 +17,7 @@ const playerReducer = (state = initialState, action) => {
             updatedState = [...state];
             updatedState[0].highest_score = action.payload;
             return updatedState;
-            
+
         default:
             return state;
     }
