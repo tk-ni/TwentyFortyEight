@@ -10,37 +10,24 @@ import {
   SafeAreaView,
   StatusBar,
 } from 'react-native';
-
+import { NavigationContainer } from '@react-navigation/native';
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  // const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <SafeAreaView >
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic">
+    <NavigationContainer>
+      <SafeAreaView >
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic">
           <Text>AA</Text>
-      </ScrollView>
-    </SafeAreaView>
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+
 });
 
 export default App;
